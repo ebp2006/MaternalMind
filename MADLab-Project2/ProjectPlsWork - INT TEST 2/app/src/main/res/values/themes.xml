@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MaternalMindAVR" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_peach</item>
+        <item name="colorOnPrimary">@color/text_dark</item>
+        <item name="colorPrimaryContainer">@color/primary_peach</item>
+        <item name="colorOnPrimaryContainer">@color/text_dark</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary_lavender</item>
+        <item name="colorOnSecondary">@color/text_dark</item>
+        <item name="colorSecondaryContainer">@color/secondary_lavender</item>
+        <item name="colorOnSecondaryContainer">@color/text_dark</item>
+        <!-- Accent/Tertiary brand color. -->
+        <item name="colorTertiary">@color/accent_pink</item>
+        <item name="colorOnTertiary">@color/white</item>
+        <item name="colorTertiaryContainer">@color/accent_pink</item>
+        <item name="colorOnTertiaryContainer">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/background_off_white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Background color. -->
+        <item name="android:windowBackground">@color/background_off_white</item>
+    </style>
+
+    <style name="CardView.Rounded" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">@color/white</item>
+    </style>
+
+    <style name="Button.Rounded" parent="Widget.Material3.Button">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Rounded</item>
+    </style>
+
+    <style name="ShapeAppearance.Rounded" parent="">
+        <item name="cornerSize">20dp</item>
+    </style>
+</resources>

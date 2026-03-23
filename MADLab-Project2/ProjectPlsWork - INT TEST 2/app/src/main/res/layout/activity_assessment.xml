@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_off_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="@color/text_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Wellness Assessment"
+            android:textColor="@color/text_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Please answer honestly. This helps us understand your needs."
+            android:textColor="@color/text_dark"
+            android:textSize="14sp" />
+
+        <!-- Age -->
+        <TextView style="@style/TextAppearance.Material3.BodyLarge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Your Age Group" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgAge" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="25-30" android:tag="0" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30-35" android:tag="0" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="35-40" android:tag="0" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="40-45" android:tag="0" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="45-50" android:tag="0" />
+        </RadioGroup>
+
+        <!-- Feeling sad -->
+        <TextView style="@style/TextAppearance.Material3.BodyLarge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Feeling sad or Tearful?" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgSad" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No" android:tag="0" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sometimes" android:tag="1" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes" android:tag="2" />
+        </RadioGroup>
+
+        <!-- Irritable -->
+        <TextView style="@style/TextAppearance.Material3.BodyLarge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Irritable towards baby &amp; partner?" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgIrritable" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No" android:tag="0" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sometimes" android:tag="1" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes" android:tag="2" />
+        </RadioGroup>
+
+        <!-- Sleep -->
+        <TextView style="@style/TextAppearance.Material3.BodyLarge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Trouble sleeping at night?" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgSleep" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No" android:tag="0" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Two or more days a week" android:tag="1" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes" android:tag="2" />
+        </RadioGroup>
+
+        <!-- Concentration -->
+        <TextView style="@style/TextAppearance.Material3.BodyLarge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Problems concentrating or making decisions?" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgConcentration" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No" android:tag="0" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Often" android:tag="1" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes" android:tag="2" />
+        </RadioGroup>
+
+        <!-- Appetite -->
+        <TextView style="@style/TextAppearance.Material3.BodyLarge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Overeating or loss of appetite?" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgAppetite" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Not at all" android:tag="0" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No" android:tag="0" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes" android:tag="2" />
+        </RadioGroup>
+
+        <!-- Guilt -->
+        <TextView style="@style/TextAppearance.Material3.BodyLarge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Feeling of guilt?" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgGuilt" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No" android:tag="0" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Maybe" android:tag="1" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes" android:tag="2" />
+        </RadioGroup>
+
+        <!-- Bonding -->
+        <TextView style="@style/TextAppearance.Material3.BodyLarge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Problems of bonding with baby?" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgBonding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No" android:tag="0" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sometimes" android:tag="1" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes" android:tag="2" />
+        </RadioGroup>
+
+        <!-- Suicide -->
+        <TextView style="@style/TextAppearance.Material3.BodyLarge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Suicide attempt?" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgSuicide" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No" android:tag="0" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Not interested to say" android:tag="1" />
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes" android:tag="5" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSubmitAssessment"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:text="Submit Assessment" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/secondary_lavender"
+            app:cardCornerRadius="24dp">
+            <TextView
+                android:id="@+id/tvAssessmentResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                android:textAlignment="center"
+                android:textColor="@color/text_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>
